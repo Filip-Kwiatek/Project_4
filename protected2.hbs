@@ -1,0 +1,39 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Profile</a>
+</nav>
+
+<div>
+    <div style="margin-top: 20px;margin-bottom: 20px;background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red); -webkit-background-clip: text;
+  color: transparent; text-align: center;" >
+    </div>
+    <h2 style="margin-top: 100px; text-align: center">You should see belove a list of your schedules: </h2>
+        <div class="schedules-group" style="margin-top: 20px;border: 4px solid black">
+        </div>
+      </div>
+        <div>
+            <h2 style="text-align: center; margin-top: 50px">Add your meeting!</h2>
+            <form method="POST" action="/post">
+            <div class="form-group">
+                <label for="Id">Id:</label>
+                <input name="Id" type="text" class="form-control" id="Id" placeholder="Please enter Id here">
+            </div>
+
+            <div class="form-group">
+                <label for="Day">Day: </label>
+                <input name="Day" type="text" class="form-control" id="Day" placeholder="Please enter in which day you want to have meeting">
+            </div>
+
+            <div class="form-group">
+                <label for="TimeStart">TimeStart:</label>
+                <input name="TimeStart" type="text" class="form-control" id="TimeStart" placeholder="Please enter a hour when you want to have a meet">
+            </div>
+
+            <div class="form-group">
+                <label for="TimeEnd">TimeEnd:</label>
+                <input name="TimeEnd" type="text" class="form-control" id="TimeEnd" placeholder="Please enter a hour when you want to end a meet">
+            </div>
+
+            <button type="submit" class="btn btn-primary">Add!</button>
+        </form>
+        </div>
+</div>
